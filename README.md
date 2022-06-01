@@ -30,7 +30,6 @@ Once you have installed them, you need to use the following command to clone the
 git clone https://github.com/richardoppiyo/blogapp.git
 ```
 
-
 ## Usage
 
 Make sure you are in the root directory by using the following command 
