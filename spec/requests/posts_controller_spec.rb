@@ -12,7 +12,7 @@ RSpec.describe 'Posts', type: :request do
     expect(response).to render_template('index')
   end
   it 'correct body info index page' do
-    expect(response.body).to include('This is a new post to a given user')
+    expect(response.body).to include('The Users List')
   end
 end
 
@@ -28,6 +28,6 @@ RSpec.describe 'Posts', type: :request do
     expect(response).to render_template('show')
   end
   it 'correct body info show page' do
-    expect(response.body).to include('This is to show a particular user post')
+    expect(response.body).to include('Here is a User')
   end
 end
