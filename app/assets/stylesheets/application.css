@@ -358,3 +358,19 @@
     color: #796a5e;
   }
 
+  .logger_in_form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .custom-login {
+    margin: auto;
+    padding-top: 30px;
+  }
+  
+  .mybtn {
+    margin: 30px;
+    height: 50px;
+    width: 30%;
+  }
+  
