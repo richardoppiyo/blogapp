@@ -371,3 +371,10 @@ body {
   height: 50px;
   width: 30%;
 }
+
+.mybtn2 {
+  display: block;
+  margin: 20px 0;
+  height: 40px;
+  width: 50%;
+}
