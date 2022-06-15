@@ -23,6 +23,10 @@ RSpec.describe 'Sign in page', type: :system do
         expect(page).to have_content('Invalid Email or password')
     end
 
-
+    it 'click Log in button with wrong details to give error message' do
+        visit user_session_path
+        click_on 'Log in'
+        expect(page).to have_content('Invalid Email or password')
+    end
   end
 end
