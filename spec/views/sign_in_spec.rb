@@ -12,5 +12,9 @@ RSpec.describe 'Sign in page', type: :system do
         expect(page).to have_content('Password')
     end
 
+    it 'shows the Log in button' do
+        visit user_session_path
+        expect(page).to have_content('Log in')
+    end
   end
 end
