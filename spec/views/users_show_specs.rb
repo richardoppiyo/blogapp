@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User show', type: :system do
+RSpec.describe 'User show', type: :system, js: true do
   before :each do
     @test1 = User.create(id: 42, name: 'Kyle', bio: 'tester 1', photo: 'none',
                          password: '123456', email: 'kyle@gmail.com', posts_counter: 4, confirmed_at: Time.now)

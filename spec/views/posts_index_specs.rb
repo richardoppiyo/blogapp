@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Posts index', type: :system do
+RSpec.describe 'Posts index', type: :system, js: true do
   before :each do
     @test = User.create(id: 42, name: 'Kyle', bio: 'hello there', photo: 'none',
                         password: '123456', email: 'kyle@gmail.com', posts_counter: 4, confirmed_at: Time.now)
