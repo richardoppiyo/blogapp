@@ -34,7 +34,7 @@ RSpec.describe 'Sign in page', type: :system do
         fill_in 'Email', with: 'richman@gmail.com'
         fill_in 'Password', with: 'qwertyuiop'
         click_on 'Log in'
-        expect(page.current_path).to have_content('/users/')
+        expect(page.current_path).to have_content('/login')
     end
   end
 end

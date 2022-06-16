@@ -5,7 +5,7 @@ require_relative '../config/environment'
 
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
-require "capybara/rspec"
+require 'capybara/rspec'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -14,8 +14,15 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
+Capybara.register_driver :selenium_chrome do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+
+Capybara.javascript_driver = :selenium_chrome 
+
+
 RSpec.configure do |config|
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.fixture_path = "#{::Rails.root}/spec/views"
 
   config.use_transactional_fixtures = true
 
@@ -31,10 +38,7 @@ RSpec.configure do |config|
 
   config.filter_rails_from_backtrace!
   config.filter_gems_from_backtrace("gem name")
-
-  Capybara.register_driver :selenium_chrome do |app|
-    Capybara::Selenium::Driver.new(app, browser: :chrome)
-  end
-  
-  Capybara.javascript_driver = :selenium_chrome
 end
+
+
+

@@ -1,9 +1,14 @@
-example_id                               | status | run_time        |
----------------------------------------- | ------ | --------------- |
-./spec/views/sign_in_spec.rb[1:1:1]      | passed | 0.43941 seconds |
-./spec/views/sign_in_spec.rb[1:1:2]      | passed | 3.22 seconds    |
-./spec/views/sign_in_spec.rb[1:1:3]      | passed | 0.45347 seconds |
-./spec/views/sign_in_spec.rb[1:1:4]      | passed | 0.40587 seconds |
-./spec/views/sign_in_spec.rb[1:1:5]      | passed | 0.35139 seconds |
-./spec/views/sign_in_spec.rb[1:1:6]      | passed | 0.59493 seconds |
-./spec/views/users_index_specs.rb[1:1:1] | failed | 16.31 seconds   |
+example_id                              | status | run_time        |
+--------------------------------------- | ------ | --------------- |
+./spec/views/sign_in_spec.rb[1:1:1]     | passed | 0.47279 seconds |
+./spec/views/sign_in_spec.rb[1:1:2]     | passed | 0.50715 seconds |
+./spec/views/sign_in_spec.rb[1:1:3]     | passed | 0.49985 seconds |
+./spec/views/sign_in_spec.rb[1:1:4]     | passed | 1.44 seconds    |
+./spec/views/sign_in_spec.rb[1:1:5]     | passed | 5.05 seconds    |
+./spec/views/sign_in_spec.rb[1:1:6]     | passed | 0.62896 seconds |
+./spec/views/users_index_spec.rb[1:1:1] | failed | 11.67 seconds   |
+./spec/views/users_show_spec.rb[1:1:1]  | failed | 0.02096 seconds |
+./spec/views/users_show_spec.rb[1:1:2]  | failed | 0.01434 seconds |
+./spec/views/users_show_spec.rb[1:1:3]  | failed | 6.79 seconds    |
+./spec/views/users_show_spec.rb[1:1:4]  | failed | 0.02587 seconds |
+./spec/views/users_show_spec.rb[1:1:5]  | failed | 0.08592 seconds |
