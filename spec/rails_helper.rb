@@ -18,8 +18,7 @@ Capybara.register_driver :selenium_chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
 
-Capybara.javascript_driver = :selenium_chrome 
-
+Capybara.javascript_driver = :selenium_chrome
 
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/views"
@@ -29,7 +28,6 @@ RSpec.configure do |config|
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
 
-
   #     RSpec.describe UsersController, type: :controller do
   #       # ...
   #     end
@@ -37,8 +35,5 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.filter_rails_from_backtrace!
-  config.filter_gems_from_backtrace("gem name")
+  config.filter_gems_from_backtrace('gem name')
 end
-
-
-

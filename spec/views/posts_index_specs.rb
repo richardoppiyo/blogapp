@@ -38,7 +38,7 @@ RSpec.describe 'Posts index', type: :system, js: true do
     it "I can see the user's username." do
       expect(page).to have_content('Kyle')
     end
-    
+
     it 'I can see the number of posts the user has written.' do
       expect(page).to have_content('number of posts: 3')
     end
